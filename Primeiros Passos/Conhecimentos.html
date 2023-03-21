@@ -83,7 +83,8 @@
     </P>
 
     <h2>Hierarquia de títulos</h2>
-    <p>H1= título principal - título de nível 1 <br>
+    <p>
+        H1= título principal - título de nível 1 <br>
        H2= título de nível 2 <br>
        h3= título de nível 3 <br>
        Vai do H1 até o H6 <br>
@@ -98,6 +99,65 @@
         Itálico maneira semântica: &lt;em&gt;&lt;/em&gt; <br>
         (ctrl + shift + p = dicas)
     </p>
-    
-</body>
+
+    <h2>Formatações adicionais</h2>
+    <p>
+        &lt;mark&gt;&lt;/mark&gt; Adiciona como se fosse marca texto. <br>
+        &lt;mark style= "background-color:'cor'";&gt; Muda a cor de maneira pontual. <br>
+        Para mudar a cor de todos os mark, colocar na área "head" com &lt;mark style= "background-color:'cor'";&gt;<br><br>
+        Texto grande: &lt;big&gt;&lt;/big&gt; <br>
+        Texto Pequeno: &lt;small&gt;&lt;/small&gt; <br><br>
+        Texto excluído: &lt;del&gt;&lt;/del&gt; O texto aparece riscado. <br>
+        Texto inserido: &lt;ins&gt;&lt;/ins&gt; O texto aparece sublinhado. <br><br>
+        Texto sobrescrito: &lt;sup&gt;&lt;/sup&gt; A parte selecionada no texto fica em cima. <br>
+        Texto subscrito: &lt;sub&gt;&lt;/sub&gt; A parte selecionada no texto fica em baixo.
+    </p>
+
+    <h2>Códigos e citações</h2>
+    <h3>Código-fonte/Pré-formatação:</h3>
+    <p>
+        &lt;code&gt;&lt;/code&gt; Fica numa formatação melhor para código. <br>
+        &lt;pre&gt;&lt;/pre&gt; Fica numa formatação com linha de código. <br>
+        (Dá para usar as duas maneiras juntas.)
+    </p>
+    <h3>Citação simples:</h3>
+    <p>
+        &lt;q&gt;&lt;/q&gt; Coloca aspas (fica um sentido ao inves de colocar as aspas manualmente).
+    </p>
+    <h3>Citação Completa:</h3>
+    <p>
+        &lt;blockquote&gt;&lt;/blockquote&gt; A citação vai mais para a direita.
+    </p>
+    <h3>Abreviações:</h3>
+    <p>
+        &lt;abbr title= "Exemplo de abreviação"&gt;&lt;/abbr&gt; Serve para mostrar o que significa a abreviação.
+    </p>
+
+    <h2>Listas</h2>
+    <p>
+        &lt;ol&gt;&lt;/ol&gt; Listas ordenadas (1, 2, 3...) <br>
+        (ol type aparece as opções de como você quer numerar) <br>
+        &lt;li&gt;&lt;/li&gt; Item de lista (Ele que coloca os números) <br>
+        &lt;ul&gt;&lt;/ul&gt; Listas não ordenadas (Não precisa seguir uma ordem) <br>
+        (ul type você escolhe entre círculo preto: "disc"; círculo limpo: "circle"; um quadradinho: "square") <br>
+        Para fazer uma lista dentro da lista é só colocar dentro do "&lt;li&gt;" a tag &"lt;ol&gt;" ou "&lt;ul&gt;".
+    </p>
+    <h3>Listas de definição</h3>
+    <p>
+        &lt;dl&gt;&lt;/dl&gt; Para fazer a lista. <br>
+        &lt;dt&gt;&lt;/dt&gt; Como se fosse o termo. <br>
+        &lt;dd&gt;&lt;/dd&gt; Como se fosse a descrição.
+    </p>
+    <h2>Links</h2>
+    <p>
+        Link externo: Um link que não é nosso. <br>
+        &lt;a href= "Link do site"&gt;&lt;/a&gt; <br>
+        target= "_blank" rel= "external" O link abre em outra página em outra aba. <br>(Recomendado ir para outra página quando o link for externo e permanecer na aba quando for seu.) <br><br>
+        Link interno: <br>
+        Basicamente a mesma coisa do externo, mas você usa o seu link e use a dica do "ctrl + space" para abrir os links e pastas. <br><br>
+        Link para download: <br>
+        Ex: &lt;a href= "livro/meulivro.pdf" download= "meulivro.pdf" type= "application/pdf"&gt;&lt;/a&gt;
+    </p>
+
+</body>    
 </html>
