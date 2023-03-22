@@ -7,40 +7,20 @@
     <title>HTML</title>
 </head>
 <body>
-    <h1>Coisas que aprendi em HTML e CSS</h1>
-    <h2>Módulo 1</h2> <h3>Primeiros passos HTML + CSS</h3>
-    <p>Conceitos básicos, preparação do ambiente, semântica da HTML5, textos, títulos, ligações, multimídia, estilos.</p>
-    <h2>Módulo 2</h2> <h3>Deixando as coisas mais bonitas</h3>
-    <p>Fundamentos design, psicologia das cores, tipografia, elementos CSS, modelo de caixas, wireframe, responsividade.</p>
-    <h2>Módulo 3</h2> <h3>Colocando um protótipo no ar</h3>
-    <p>Versionamento de software, hospedagem de sites estáticos, tabelas.</p>
-    <h2>Módulo 4</h2> <h3>Aprofundando conhecimentos</h3>
-    <p>Quadros em linhas, formulários, média queries, mobile first.</p>
+    <h1>Coisas que aprendi em HTML</h1>
 
-    <h2>História da Internet</h2>
-    <p>Internet vem da arpanet que surgiu durante a guerra para proteger centros militares.</p>
-    <p>HTML - Hyper Text Markup Language</p>
-    <p>CSS - Cascading Style Sheets</p>
 
-    <h2>A linguagem HTML é uma linguagem focada em conteúdo.</h2>
-    <h3>HTML</h3>
+    <strong>HTML</strong> - Hyper Text Markup Language.
     <p>Conteúdo: textos, imagens, vídeos, tabelas.</p>
-    <h3>CSS</h3>
+    <strong>CSS</strong> - Cascading Style Sheets.
     <p>Design: Cores, sombras, tamanhos, posicionamento.</p>
-    <h3>JS</h3>
+    <strong>JS</strong> - JavaScript
     <p>Interações: Menus, animações, popups, validações.</p>
 
     <h2>Conteúdo em HTML</h2>
     <p>&lt;h1&gt;Exemplo de título&lt;/h1&gt;</p>
     <p>&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;</p>
     <p>&lt;img src= "foto.png" Alt= "Exemplo de foto"&gt;</p>
-
-    <h2>Estilo em CSS</h2>
-    h1 (seletor) { <br>
-        font-family: Arial; <br>
-        font-size: 20pt; <br>
-        color: blue; <br>
-    }
 
     <h2>Estrutura básica de documento HTML</h2>
     <p>
@@ -57,11 +37,6 @@
         &lt;/html&gt; <br>
         <p>(Apertar "!" Ele deixa o código "pronto" para editar)</p>
     </p>
-
-    <h2>Meu primeiro exercício</h2>
-    &lt;h1&gt;Título (serve pra ser o título do site). <br>
-    &lt;p&gt; para fazer paragrafos. <br>
-    &lt;hr&gt; Linha horizontal.
 
     <h2>Paragrafos e quebra linhas</h2>
     &lt;br&gt; Ele quebra a linha pra baixo. <br>
@@ -156,8 +131,50 @@
         Link interno: <br>
         Basicamente a mesma coisa do externo, mas você usa o seu link e use a dica do "ctrl + space" para abrir os links e pastas. <br><br>
         Link para download: <br>
-        Ex: &lt;a href= "livro/meulivro.pdf" download= "meulivro.pdf" type= "application/pdf"&gt;&lt;/a&gt;
+        Ex: <br> 
+        &lt;a href= "livro/meulivro.pdf" download= "meulivro.pdf" type= "application/pdf"&gt;&lt;/a&gt;
     </p>
-
+    <h2>Imagens dinâmicas</h2>
+    <p>
+        Dimensões: <br>
+        No celular: 300/300 e 80/80 <br>
+        No tablet: 700/700 e 80/80 <br>
+        Notebook/TV: 1000/1000 e 80/80
+    </p>
+    <p>
+        &lt;picture&gt;&lt;/picture&gt; Essa tag permite que você crie várias sourcers, fontes e etc. <br><br>
+        Ex: <br>
+        &lt;picture&gt; <br>
+        &lt;Source media= "(max= width: 750px)" srcset= "imagens/foto-p.png" type= "image/png"&gt; <br>
+        &lt;Source media= "(max= width: 1050px)" srcset= "imagens/foto-m.png" type= "image/png"&gt; <br>
+        &lt;img src= "imagens/foto-g.png" alt= "Imagem flexível"&gt; <br>
+        &lt;/picture&gt;
+    </p>
+    <h2>Áudios</h2>
+    <p>
+        Ex: <br>
+        &lt;audio src= "media/happy-mistake.mp3" controls autoplay&gt;&lt;/audio&gt; <br>
+        Essa é a maneira simples de fazer. <br><br>
+        Maneira "mais complexa" <br>
+        Ex: <br>
+        &lt;audio preload= "metadata" autoplay controls loop&gt; <br>
+        &lt;source src= "midia/guanacast-33.mp3" type= "audio/mpeg"&gt; <br>
+        &lt;source src= "midia/guanacast-33.ogg" type= "audio/ogg"&gt; <br>
+        &lt;source src= "midia/guanacast-33.wav" type= "audio/wav"&gt; <br>
+        Caso não carregue nenhum, coloque o link do arquivo para a pessoa baixar.
+    </p>
+    <h2>Vídeos</h2>
+    <p>
+        Ex: <br>
+        &lt;video src= "midia/meu-video.mp4" width= "500" controls&gt;&lt;/video&gt; <br> Essa é a maneira simples de fazer. <br><br>
+        A maneira "mais complexa" é basicamente a mesma coisa, só muda o tipo (mp4, ogv, webm) colocar do mais leve para o mais pesado. <br>
+        (Da pra colocar a tumb do vídeo com a tag "poster" dentro de vídeo) <br>
+        Isso é hospedando ele do próprio site.
+    </p>
+    <h3>Vídeos do YouTube</h3>
+    <p>
+        No vídeo, clique em compartilhar e depois em incorporar, irá abrir o código e é só copiar e colar no seu próprio código.
+    </p>
+    <a href="conhecimentos-css.html">CSS</a>
 </body>    
 </html>
