@@ -7,6 +7,95 @@
     <title>CSS</title>
 </head>
 <body>
-    Funcionou
+    <h1>Coisas que aprendi em CSS</h1>
+
+    <h2>Estilo Inline</h2>
+    <p>
+        Esse é o mais básico para ter um conhecimento de CSS. <br>
+        Ex: <br>
+        &lt;body style= "background-color: (cor desejada);"&gt; <br>
+        Isso muda a cor de fundo do seu site. <br>
+        Ex: <br>
+        &lt;h1 style= "color: (cor desejada);"&gt;blablabla&lt;/h1&gt; <br>
+        Isso muda a cor da letra, mas é uma limitação, pois não muda todos os h1 e etc, tem que fazer isso em um arquivo CSS para mudar todos. Esse método é para mudanças pontuais.
+    </p>
+    <h2>Estilo CSS interno</h2>
+    <p>
+        Separando conteúdo e estilo: <br>
+        Dentro de &lt;head&gt;&lt;/head&gt; você pode colocar a tag &lt;style&gt;&lt;/style&gt; e vai ser considerado CSS e você não vai precisar mexer em todas as linhas igual ao exemplo anterior. <br>
+        Ex: <br>
+        &lt;head&gt; <br>
+        &lt;style&gt; <br>
+        body {
+            background-color: (cor desejada); <br>
+            font-family: Arial, Helvetica, sans-serife; (ou outra fonte) <br>
+            font-size: 20px; <br>
+        } <br>
+        h1 { <br>
+            color: (cor desejada); <br>
+            background-color: (cor desejada); <br>
+        } <br>
+        h2 { <br>
+            color: (cor desejada); <br>
+        } <br>
+        p { <br>
+            text-align: justify; (ou outro) <br>
+        } <br>
+        &lt;/style&gt; <br>
+        &lt;/head&gt;
+    </p> 
+    <h2>Estilo CSS externo</h2>
+    <p>
+        Eles estarão em outro arquivo (mais recomendado). <br>
+        Dentro de &lt;head&gt; você coloca a tag &lt;link: css&gt; <br>
+        Ex: <br>
+        &lt;head&gt;
+        &lt;link rel= "stylesheet" href= "style.css"&gt; <br>
+        Aperta ctrl + clique em "style.css" para criar o arquivo (no arquivo de CSS, no ínicio, coloque @charset "UTF-8"; para configurar em português). <br>
+        Da para usar as três formas juntas, o Inline é o mais "poderoso" que o interno que é mais "poderoso" que o externo.
+    </p>
+    <h2>Cores em CSS</h2>
+    <p>
+        Representação por nome: blue, white, red... <br>
+        Representação por código hexadecimais: #0000ff = blue... <br>
+        (Hexadecimal: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) <br>
+        (Da para ver esses códigos de cores em alguns programas de edição) <br>
+        Representação por rgb: rgb(0, 0, 255) = azul <br>
+        Representação por matiz, saturação e luminosidade: hsl(240, 100%, 50%) = blue <br>
+        A melhor opção é colocar o nome e mexer no quadradinho da cor, pois ele mostra o rgb e a transparência também.
+    </p>
+    <h2>Harmonia das cores</h2>
+    <p>
+        Cores primárias: amarelo, vermelho e azul; <br>
+        Cores secundárias: laranja, violeta e verde; <br>
+        Cores terciárias: amarelo-esverdeado, amarelo alaranjado, vermelho-alaranjado, vermelho-arrocheado, azul-arrocheado, azul-esverdeado. <br>
+        Cores quentes e cores frias: <br>
+        Quentes: amarelo, laranja e vermelho. <br>
+        Frias: azul, violeta e verde.
+    </p>
+    <h2>Paleta de cores</h2>
+    <p>
+        Usar o site "color.adobe.com" ou "paletton.com"(este da uma preview de como ficaria um site).
+    </p>
+    <h2>Degradê em CSS</h2>
+    <p>
+        Ex: <br>
+        &lt;head&gt; <br>
+        &lt;style&gt; <br>
+        body { <br>
+             background-image: linear-gradient(to right(or to left), white, blue); <br>
+             background-attachment: fixed; <br>
+        } <br>
+    </p>
+    <h2>Configuração global das CSS</h2>
+    <p>
+        * {} <br>
+        Ex: <br>
+        * { <br>
+            height: 100%; <br>
+        } <br>
+        (weight= peso; width= largura; height= altura.)
+    </p>
+
 </body>
 </html>
