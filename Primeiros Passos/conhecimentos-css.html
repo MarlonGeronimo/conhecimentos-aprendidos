@@ -96,6 +96,164 @@
         } <br>
         (weight= peso; width= largura; height= altura.)
     </p>
+    <h2>Fontes em CSS</h2>]
+    <P>
+        Ex: <br>
+        &lt;head&gt; <br>
+        &lt;style&gt; <br>
+        body { <br> 
+            font-family: Arial, Helvetica, sans-serifa; <br>
+        } <br>
+        font-size (é recomendado usar "px" ou "em" nas medidas) (16px = 1em) <br>
+        font-weight (pode ser lighter, normal, bold ou bolder) <br>
+    </P>
+    <p>
+        Exemplo para facilitar quando colocar várias coisas em uma fonte <br>
+        Ex: <br>
+        h1 { <br>
+            font-family: 'Work Sans', sans-serif; <br>
+            font-weight: bolder; <br>
+            font-size: 3em; <br>
+            font-style: italic; <br> 
+        }
+    </p>
+    <p>
+        Para facilitar isso tem uma ordem: <br>
+        font-style - font-weight - font-size - font-family <br>
+        h1 { <br> 
+            font: italic bolder 3em 'Work Sans', sans-serif; <br>
+        } <br>
+    </p>
+    <h2>Google Fonts</h2>
+    <p>
+        Pesquisar fonts.google.com <br>
+        Lá você escolhe a fonte que quiser usar. <br>
+        "&lt;link&gt;" quando for usar em HTML e "@import" quando for CSS
+    </p>
+    <h2>Fonte externa</h2>
+    <p>Você vai receber a fonte ou vai baixar.</p>
+    <p>
+        Ex: <br>
+        &lt;style&gt; <br>
+        @font-face { <br>
+            font-family: 'love'; (Pode colocar o nome que quiser.)(E coloca no font-family do que você quer mudar.)<br>
+            src: url ('love story.ttf') format ('truetype'); <br>
+            font-weight: normal; <br>
+            font-style: normal; <br>
+        } <br>
+        Tipos de format() <br>
+        -Opentype(otf) <br>
+        -Truetype(ttf) <br>
+        Tem mais, mas são basicamente esses.
+    </p>
+    <h2>Alinhamento</h2>
+    <p>Da para alinhar o texto de três formas: esquerda, direita e centro.</p>
+    <p>
+        Ex: <br>
+        body {text-align: left;(Geralmente é o padrão)} - Alinhado para a esqueda. <br>
+        h1 {text-align: ceenter} - Alinhado para o centro. <br>
+        h2 {text-align: right;} - Alinhado para a direita. <br>
+        p {text-align: justify;} - Alinhado para a esquerda e direita. <br>
+        Há também o recuo de parágrafo. <br>
+        Ex: <br>
+        p { <br>
+            text-align: justify; <br>
+            text-indent: 30px; <br>
+        }
+    </p>
+    <h2>ID em CSS</h2>
+    <p>
+        Para diferenciar um h1 de outro h1. <br>
+        Ex: (Ainda em HTML)<br>
+        &lt;h1 id="principal"&gt;blablabla&lt;/h1&gt; <br>
+        Em CSS:
+        h1#principal {text-align: center;} <br>
+        Assim, só o h1 com id vai ser mudado. <br>
+        (Id em HTML = # em CSS) - Muda só um. <br>
+        (Class em HTML = . em CSS) - Pode mudar vários. <br>
+        
+    </p>
+    <p>
+        Da para usar class em mais de um elemento. <br>
+        Se já tiver um class é só dar espaço e escrever a outra. <br>
+        Também da para usar class em um id.
+    </p>
+    <h2>Pseudo-Classes em CSS</h2>
+    <p>
+        Enquanto id e class são representados com "#" e ".", essa é representada com ":". <br>
+        Ex: <br>
+        &lt;style&gt; <br>
+        div:hover { <br>
+            background-color: yellow; <br>    
+        } <br>
+        Isso é uma configuração de estado. Esse em específico, passando o mouse por cima, fica na cor amarela.
+    </p>
+    <p>
+        Como esconder algo com hover no CSS <br>
+        Ex: <br>
+        &lt;style&gt; <br>
+        div > p {display: none;} (O texto não vai aparecer a princípio.) <br>
+        div:hover > p { <br>
+            display: block; <br>
+            color: white; <br>
+            background-color: red; (Vai aparecer quando passar o mouse em cima. Vai ficar com a letra branca e o fundo vermelho.) <br>
+        } <br>
+        div:hover {color: red;} (A palavra vai ficar vermelha e vai aparecer o texto escondido quando passar o mouse em cima.)
+    </p>
+    <p>
+        Não esquecer: <br>
+        # = id <br>
+        . = class <br>
+        : = pseudo-class <br>
+        :: pseudo-element <br>
+        > = children
+    </p>
+    <h2>Tipos de caixa</h2>
+    <p>
+        Box-level <br>
+        &lt;div&gt; <br>
+        &lt;h1&gt; - &lt;h6&gt; <br>
+        &lt;p&gt; <br>
+        &lt;main&gt; <br>
+        &lt;header&gt; <br>
+        &lt;nav&gt; <br>
+        &lt;article&gt; <br>
+        &lt;aside&gt; <br>
+        &lt;footer&gt; <br>
+        &lt;form&gt; <br>
+        &lt;video&gt; 
+    </p>
+    <p>
+        Inline-level <br>
+        &lt;span&gt; <br>
+        &lt;a&gt; <br>
+        &lt;code&gt; <br>
+        &lt;small&gt; <br>
+        &lt;strong&gt; <br>
+        &lt;em&gt; <br>
+        &lt;sup&gt; - &lt;sub&gt; <br>
+        &lt;label&gt; <br>
+        &lt;button&gt; <br>
+        &lt;input&gt; <br>
+        &lt;select&gt; 
+    </p>
+    <p>
+        Simplificando edições de largura, altura, style, color, esquerda, direita, cima, baixo e etc. <br>
+        Ex: <br>
+        border-width: 10px; <br>
+        border-style: solid; <br>
+        border-color: <br>
+        (border: 10px solid red;)
+    </p>
+    <p>
+        Ex02: <br>
+        padding-top(cima): 10px; <br>
+        padding-right(direita): 10px; <br>
+        padding-bottom(baixo): 10px; <br>
+        padding-left(esquerda): 10px; <br>
+        (padding: 10px 10px 10px 10px) <br>
+        (se o valor for igual, por exemplo: 10, basta colocar apenas padding: 10px)
+    </p>
 
 </body>
 </html>
