@@ -254,6 +254,145 @@
         (padding: 10px 10px 10px 10px) <br>
         (se o valor for igual, por exemplo: 10, basta colocar apenas padding: 10px)
     </p>
+    <h2>Grouping tags em HTML</h2>
+    <p>
+        &lt;header&gt;&lt;/header&gt; = cabeçalho. (Não confundir com head) <br>
+        &lt;main&gt;&lt;/main&gt; = conteúdo principal. <br>
+        &lt;footer&gt;&lt;/footer&gt; = rodapé.
+    </p>
+    <p>
+        Ex: <br>
+        <code>
+            &lt;body&gt; <br>
+            &lt;header&gt; <br>
+            &lt;h1&gt;Site&lt;/h1&gt; <br>
+            &lt;nav&gt; (serve para colocar links, basicamente) <br>
+            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
+            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
+            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
+            &lt;/nav&gt; <br>
+            &lt;/header&gt; <br>
+            &lt;main&gt; <br>
+            (Assuntos) <br>
+            &lt;/main&gt; <br>
+            &lt;footer&gt; <br>
+            &lt;p&gt; Desenvolvido por Marlon &lt;/p&gt; <br>
+            &lt;/footer&gt;
+        </code>
+    </p>
+    <p>Depois disso, organiza tudo no CSS.</p>
+    <h2>Sombras</h2>
+    <p>
+        Ex: <br>
+        nav { <br>
+            box-shadow: 5px(horizontal) 3px(vertical) 7px(bluer) black(cor) <br>
+        } <br>
+    </p>
+    <h3>Caixas com os cantos arredondados</h3>
+    <p>
+        Ex: <br>
+        main { <br>
+            border-radius: 20px <br>
+        } 
+    </p>
+    <h3>Como colocar uma imagem de fundo</h3>
+    <p>
+        Ex: <br>
+        background-color: url('imagens/pattern001.png') <br>
+        background-attachment: fixed; - A imagem do fundo continua com a rolagem.
+    </p>
+    <h2>Shorthand-background</h2>
+    <p>
+        color - image - position - repeat - attachment <br>
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat - fixed; (como o size ainda não funciona, precisa fazer um separado para ele) <br>
+        background-size: cover;
+    </p>
+    <h2>Tabelas em HTML</h2>
+    <p>
+        &lt;table&gt;&lt;/table&gt; tag para fazer tabela.
+    </p>
+    <p>
+        Hierarquia de tabela (simples) <br>
+        Table = tabela <br>
+        table row = linha de tabela (&lt;tr&gt;&lt;/tr&gt;) <br>
+        table header = cabeçalho da tabela <br>
+        table data = dado de tabela (&lt;td&gt;&lt;/td&gt;)
+    </p>
+    <p>Para ficar igual tabela de excel, basta fazer assim no CSS:</p>
+    <p>
+        table { <br>
+            width: 400px; <br>
+            border-collapse: collapse; <br>
+        } <br>
+        td { <br>
+            border: 1px solid black; <br>
+            padding: 8px;
+        }
+    </p>
+    <h3>Anatomia de tabelas grandes</h3>
+    <p>
+        Table <br>
+        thead <br>
+        tbody <br>
+        tfoot <br>
+        (Cada um pode ter tr, td e th dentro.)
+    </p>
+    <h3>Efeito zebrado na tabela</h3> 
+    <p>
+        Ex: <br>
+        tbody > tr:nth-child(2n) { <br>
+            background-color: (qualquer cor) <br>
+        } 
+    </p>
+    <h3>Cabeçalho fixo em tabela grande</h3>
+    <p>
+        Ex: <br>
+        table { <br>
+            position: relative; <br>
+        } <br>
+        thead > tr > th { <br>
+            position: sticky; <br>
+            top: -1px; <br>
+            background-color: (qualquer cor);
+        }
+    </p>
+    <h3>Mesclagem de células</h3>
+    <p>
+        colspan = "número que for" para ficar "deitado" <br>
+        rowspan = "número que for" para ficar "em pé"
+    </p>
+    <h2>iframe</h2>
+    <p>
+        O iframe é um "miniquadro" que você pode colocar uma outra aba. <br>
+        Ex: <br>
+        &lt;iframe&gt; src= "" frameborder= "(Aqui você pode mudar o tamanho com height e width)" &lt;/iframe&gt; <br>
+        Tamanho padrão de um iframe= 300x150 pixels.
+    </p>
+    <h2>Formulário básico</h2>
+    <p>
+        Ex: <br>
+        &lt;form&gt; (Colocar "action=" na frente quando for enviar para um banco de dados.) <br>
+        &lt;p&gt; Nome: &lt;input type= "text" name= "nome" id= "nome"&gt;&lt;/p&gt; <br>
+        &lt;p&gt; Sobrenome: &lt;input type= "text" name= "sobrenome" id= "sobrenome"&gt;&lt;/p&gt; <br>
+        &lt;p&gt; &lt;input type= "submit" value= "Enviar"&gt;&lt;/p&gt; <br>
+        &lt;/form&gt; <br>
+        (A tag "input" tem vários types que você pode escolher) 
+    </p>
+    <p>
+        &lt;label for= "nome"&gt; Nome &lt;/label&gt; Isso melhora o formulário; <br>
+        Colocar "required" para ser obrigatório preencher; <br>
+        Colocar "minlength:" para definir o número mínimo de caracteres; <br>
+        Colocar "maxlength:" para definir o máximo; <br>
+        Colocar "placeholder" para aparecer um nome dentro da caixa. <br>
+        &lt;fildset&gt;&lt;/fildset&gt; Faz um "quadrado" no formulário. <br>
+        &lt;legend&gt;&lt;/legend&gt; Faz uma legenda no formulário.
+    </p>
+    <h2>Media Query</h2>
+    <p>
+        Basicamente, fazer um CSS quando for feita uma impressão. <br>
+        Media= "screen" - Só para telas. <br>
+        Media= "print" - Só para impressão.
+    </p>
 
 </body>
 </html>
