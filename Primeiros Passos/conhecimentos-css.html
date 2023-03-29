@@ -13,55 +13,67 @@
     <p>
         Esse é o mais básico para ter um conhecimento de CSS. <br>
         Ex: <br>
-        &lt;body style= "background-color: (cor desejada);"&gt; <br>
+        <pre>
+            &lt;body style= "background-color: (cor desejada);"&gt; 
+        </pre>
         Isso muda a cor de fundo do seu site. <br>
         Ex: <br>
-        &lt;h1 style= "color: (cor desejada);"&gt;blablabla&lt;/h1&gt; <br>
+        <pre>
+            &lt;h1 style= "color: (cor desejada);"&gt;blablabla&lt;/h1&gt; 
+        </pre>
         Isso muda a cor da letra, mas é uma limitação, pois não muda todos os h1 e etc, tem que fazer isso em um arquivo CSS para mudar todos. Esse método é para mudanças pontuais.
     </p>
     <h2>Estilo CSS interno</h2>
     <p>
         Separando conteúdo e estilo: <br>
-        Dentro de &lt;head&gt;&lt;/head&gt; você pode colocar a tag &lt;style&gt;&lt;/style&gt; e vai ser considerado CSS e você não vai precisar mexer em todas as linhas igual ao exemplo anterior. <br>
+        Dentro de <strong>&lt;head&gt;&lt;/head&gt;</strong> você pode colocar a tag <strong>&lt;style&gt;&lt;/style&gt;</strong> e vai ser considerado CSS e você não vai precisar mexer em todas as linhas igual ao exemplo anterior. <br>
         Ex: <br>
-        &lt;head&gt; <br>
-        &lt;style&gt; <br>
-        body {
-            background-color: (cor desejada); <br>
-            font-family: Arial, Helvetica, sans-serife; (ou outra fonte) <br>
-            font-size: 20px; <br>
-        } <br>
-        h1 { <br>
-            color: (cor desejada); <br>
-            background-color: (cor desejada); <br>
-        } <br>
-        h2 { <br>
-            color: (cor desejada); <br>
-        } <br>
-        p { <br>
-            text-align: justify; (ou outro) <br>
-        } <br>
-        &lt;/style&gt; <br>
-        &lt;/head&gt;
+        <code>
+            <pre>
+                &lt;head&gt; 
+                &lt;style&gt; 
+                body {
+                    background-color: (cor desejada); 
+                    font-family: Arial, Helvetica, sans-serife; (ou outra fonte) 
+                    font-size: 20px; 
+                } <br>
+                h1 { 
+                    color: (cor desejada); 
+                    background-color: (cor desejada);
+                } <br>
+                h2 { 
+                    color: (cor desejada); 
+                } <br>
+                p { 
+                    text-align: justify; (ou outro) 
+                } 
+                &lt;/style&gt; 
+                &lt;/head&gt;
+            </pre>
+        </code>
     </p> 
     <h2>Estilo CSS externo</h2>
     <p>
         Eles estarão em outro arquivo (mais recomendado). <br>
-        Dentro de &lt;head&gt; você coloca a tag &lt;link: css&gt; <br>
+        Dentro de <strong>&lt;head&gt;</strong> você coloca a tag <strong>&lt;link: css&gt;</strong> <br>
         Ex: <br>
-        &lt;head&gt;
-        &lt;link rel= "stylesheet" href= "style.css"&gt; <br>
-        Aperta ctrl + clique em "style.css" para criar o arquivo (no arquivo de CSS, no ínicio, coloque @charset "UTF-8"; para configurar em português). <br>
+        <code>
+            <pre>
+                &lt;head&gt;
+                &lt;link rel= "stylesheet" href= "style.css"&gt; 
+            </pre>
+        </code>
+        Aperta ctrl + clique em "style.css" para criar o arquivo (no arquivo de CSS, no ínicio, coloque <strong>@charset "UTF-8";</strong> para configurar em português). <br>
         Da para usar as três formas juntas, o Inline é o mais "poderoso" que o interno que é mais "poderoso" que o externo.
     </p>
     <h2>Cores em CSS</h2>
     <p>
-        Representação por nome: blue, white, red... <br>
-        Representação por código hexadecimais: #0000ff = blue... <br>
+        Representação por <strong>nome</strong>: blue, white, red... <br>
+        Representação por <strong>código hexadecimais</strong>: #0000ff = blue... <br>
         (Hexadecimal: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) <br>
         (Da para ver esses códigos de cores em alguns programas de edição) <br>
-        Representação por rgb: rgb(0, 0, 255) = azul <br>
-        Representação por matiz, saturação e luminosidade: hsl(240, 100%, 50%) = blue <br>
+        Representação por <strong>rgb</strong>: rgb(0, 0, 255) = azul <br>
+        Representação por <strong>matiz, saturação e luminosidade</strong>: hsl(240, 100%, 50%) = blue <br>
         A melhor opção é colocar o nome e mexer no quadradinho da cor, pois ele mostra o rgb e a transparência também.
     </p>
     <h2>Harmonia das cores</h2>
@@ -75,72 +87,99 @@
     </p>
     <h2>Paleta de cores</h2>
     <p>
-        Usar o site "color.adobe.com" ou "paletton.com"(este da uma preview de como ficaria um site).
+        Usar o site "<a href="https://color.adobe.com/" target="_blank" rel="external">color.adobe.com</a>" ou "<a href="http://paletton.com/" target="_blank" rel="external">paletton.com</a>"(este da uma preview de como ficaria um site).
     </p>
     <h2>Degradê em CSS</h2>
     <p>
         Ex: <br>
-        &lt;head&gt; <br>
-        &lt;style&gt; <br>
-        body { <br>
-             background-image: linear-gradient(to right(or to left), white, blue); <br>
-             background-attachment: fixed; <br>
-        } <br>
+        <code>
+            <pre>
+                &lt;head&gt; 
+                &lt;style&gt; 
+                body { 
+                     background-image: linear-gradient(to right(<strong>or to left)</strong> blue); 
+                     background-attachment: fixed;
+                } 
+            </pre>
+        </code>
     </p>
     <h2>Configuração global das CSS</h2>
     <p>
-        * {} <br>
+        <strong>* {} <br></strong>
         Ex: <br>
-        * { <br>
-            height: 100%; <br>
-        } <br>
-        (weight= peso; width= largura; height= altura.)
+        <code>
+            <pre>
+                * { 
+                    height: 100%; 
+                } 
+            </pre>
+        </code>
+        (<strong>weight</strong>= peso; <strong>width</strong>= largura; <strong>height</strong>= altura.)
     </p>
-    <h2>Fontes em CSS</h2>]
+    <h2>Fontes em CSS</h2>
     <P>
         Ex: <br>
-        &lt;head&gt; <br>
-        &lt;style&gt; <br>
-        body { <br> 
-            font-family: Arial, Helvetica, sans-serifa; <br>
-        } <br>
-        font-size (é recomendado usar "px" ou "em" nas medidas) (16px = 1em) <br>
-        font-weight (pode ser lighter, normal, bold ou bolder) <br>
+        <code>
+            <pre>
+                &lt;head&gt; 
+                &lt;style&gt; 
+                body { 
+                    font-family: Arial, Helvetica, sans-serifa; 
+                } 
+                &lt;/style&gt; 
+                &lt;/head&gt; 
+            </pre>
+        </code>
+        <strong>font-size</strong> (é recomendado usar "px" ou "em" nas medidas) (16px = 1em) <br>
+        <strong>font-weight</strong> (pode ser lighter, normal, bold ou bolder) <br>
     </P>
     <p>
         Exemplo para facilitar quando colocar várias coisas em uma fonte <br>
         Ex: <br>
-        h1 { <br>
-            font-family: 'Work Sans', sans-serif; <br>
-            font-weight: bolder; <br>
-            font-size: 3em; <br>
-            font-style: italic; <br> 
-        }
+        <code>
+            <pre>
+                h1 { 
+                    font-family: 'Work Sans', sans-serif; 
+                    font-weight: bolder; 
+                    font-size: 3em; 
+                    font-style: italic; 
+                }
+            </pre>
+        </code>
     </p>
     <p>
         Para facilitar isso tem uma ordem: <br>
-        font-style - font-weight - font-size - font-family <br>
-        h1 { <br> 
-            font: italic bolder 3em 'Work Sans', sans-serif; <br>
-        } <br>
+        <strong>font-style - font-weight - font-size - font-family</strong>
+        <code>
+            <pre>
+                h1 {
+                    font: italic bolder 3em 'Work Sans', sans-serif; 
+                } 
+            </pre>
+        </code>
     </p>
     <h2>Google Fonts</h2>
     <p>
-        Pesquisar fonts.google.com <br>
+        Pesquisar <a href="https://fonts.google.com/" target="_blank" rel="external">fonts.google.com</a>. <br>
         Lá você escolhe a fonte que quiser usar. <br>
-        "&lt;link&gt;" quando for usar em HTML e "@import" quando for CSS
+        "<strong>&lt;link&gt;</strong>" quando for usar em HTML e "<strong>@import</strong>" quando for CSS
     </p>
     <h2>Fonte externa</h2>
     <p>Você vai receber a fonte ou vai baixar.</p>
     <p>
         Ex: <br>
-        &lt;style&gt; <br>
-        @font-face { <br>
-            font-family: 'love'; (Pode colocar o nome que quiser.)(E coloca no font-family do que você quer mudar.)<br>
-            src: url ('love story.ttf') format ('truetype'); <br>
-            font-weight: normal; <br>
-            font-style: normal; <br>
-        } <br>
+        <code>
+            <pre>
+                &lt;style&gt; 
+                @font-face { 
+                    font-family: 'love'; 
+                    (Pode colocar o nome que quiser.)(E coloca no font-family do que você quer mudar.)
+                    src: url ('love story.ttf') <strong>format</strong> ('truetype'); 
+                    font-weight: normal; 
+                    font-style: normal; 
+                } 
+            </pre>
+        </code>
         Tipos de format() <br>
         -Opentype(otf) <br>
         -Truetype(ttf) <br>
@@ -149,28 +188,40 @@
     <h2>Alinhamento</h2>
     <p>Da para alinhar o texto de três formas: esquerda, direita e centro.</p>
     <p>
+        Exemplo: <br>
+        body {text-align: left;(Geralmente é o padrão)} - Alinhado para a <strong>esqueda</strong>. <br>
+        h1 {text-align: center} - Alinhado para o <strong>centro</strong>. <br>
+        h2 {text-align: right;} - Alinhado para a <strong>direita</strong>. <br>
+        p {text-align: justify;} - Alinhado para a <strong>esquerda e direita</strong>. <br>
+        Há também o <strong>recuo de parágrafo</strong>. <br>
         Ex: <br>
-        body {text-align: left;(Geralmente é o padrão)} - Alinhado para a esqueda. <br>
-        h1 {text-align: ceenter} - Alinhado para o centro. <br>
-        h2 {text-align: right;} - Alinhado para a direita. <br>
-        p {text-align: justify;} - Alinhado para a esquerda e direita. <br>
-        Há também o recuo de parágrafo. <br>
-        Ex: <br>
-        p { <br>
-            text-align: justify; <br>
-            text-indent: 30px; <br>
-        }
+        <code>
+            <pre>
+                p { 
+                    text-align: justify; 
+                    text-indent: 30px; 
+                }
+            </pre>
+        </code>
     </p>
     <h2>ID em CSS</h2>
     <p>
         Para diferenciar um h1 de outro h1. <br>
         Ex: (Ainda em HTML)<br>
-        &lt;h1 id="principal"&gt;blablabla&lt;/h1&gt; <br>
-        Em CSS:
-        h1#principal {text-align: center;} <br>
+        <code>
+            <pre>
+                &lt;h1 id="principal"&gt;blablabla&lt;/h1&gt;
+            </pre>
+        </code>
+        Em CSS: <br>
+        <code>
+            <pre>
+                h1#principal {text-align: center;}
+            </pre>
+        </code>
         Assim, só o h1 com id vai ser mudado. <br>
-        (Id em HTML = # em CSS) - Muda só um. <br>
-        (Class em HTML = . em CSS) - Pode mudar vários. <br>
+        (<strong>Id</strong> em HTML = <strong>#</strong> em CSS) - Muda só um. <br>
+        (<strong>Class</strong> em HTML = <strong>.</strong> em CSS) - Pode mudar vários. <br>
         
     </p>
     <p>
@@ -180,25 +231,36 @@
     </p>
     <h2>Pseudo-Classes em CSS</h2>
     <p>
-        Enquanto id e class são representados com "#" e ".", essa é representada com ":". <br>
+        Enquanto id e class são representados com "#" e ".", essa é representada com "<strong>:</strong>". <br>
         Ex: <br>
-        &lt;style&gt; <br>
-        div:hover { <br>
-            background-color: yellow; <br>    
-        } <br>
+        <code>
+            <pre>
+                &lt;style&gt; 
+                div:hover { 
+                    background-color: yellow; 
+                } 
+            </pre>
+        </code>
         Isso é uma configuração de estado. Esse em específico, passando o mouse por cima, fica na cor amarela.
     </p>
     <p>
         Como esconder algo com hover no CSS <br>
         Ex: <br>
-        &lt;style&gt; <br>
-        div > p {display: none;} (O texto não vai aparecer a princípio.) <br>
-        div:hover > p { <br>
-            display: block; <br>
-            color: white; <br>
-            background-color: red; (Vai aparecer quando passar o mouse em cima. Vai ficar com a letra branca e o fundo vermelho.) <br>
-        } <br>
-        div:hover {color: red;} (A palavra vai ficar vermelha e vai aparecer o texto escondido quando passar o mouse em cima.)
+        <code>
+            <pre>
+                &lt;style&gt; 
+                div > p {display: none;} 
+            (O texto não vai aparecer a princípio.) 
+                div:hover > p { 
+                    display: block; 
+                    color: white; 
+                    background-color: red; 
+            (Vai aparecer quando passar o mouse em cima. Vai ficar com a letra branca e o fundo vermelho.) 
+                } 
+                div:hover {color: red;} 
+            (A palavra vai ficar vermelha e vai aparecer o texto escondido quando passar o mouse em cima.)
+            </pre>
+        </code>
     </p>
     <p>
         Não esquecer: <br>
@@ -210,124 +272,154 @@
     </p>
     <h2>Tipos de caixa</h2>
     <p>
-        Box-level <br>
-        &lt;div&gt; <br>
-        &lt;h1&gt; - &lt;h6&gt; <br>
-        &lt;p&gt; <br>
-        &lt;main&gt; <br>
-        &lt;header&gt; <br>
-        &lt;nav&gt; <br>
-        &lt;article&gt; <br>
-        &lt;aside&gt; <br>
-        &lt;footer&gt; <br>
-        &lt;form&gt; <br>
-        &lt;video&gt; 
+        <strong>Box-level</strong> <br>
+        <code>
+            &lt;div&gt; <br>
+            &lt;h1&gt; - &lt;h6&gt; <br>
+            &lt;p&gt; <br>
+            &lt;main&gt; <br>
+            &lt;header&gt; <br>
+            &lt;nav&gt; <br>
+            &lt;article&gt; <br>
+            &lt;aside&gt; <br>
+            &lt;footer&gt; <br>
+            &lt;form&gt; <br>
+            &lt;video&gt;
+        </code>
     </p>
     <p>
-        Inline-level <br>
-        &lt;span&gt; <br>
-        &lt;a&gt; <br>
-        &lt;code&gt; <br>
-        &lt;small&gt; <br>
-        &lt;strong&gt; <br>
-        &lt;em&gt; <br>
-        &lt;sup&gt; - &lt;sub&gt; <br>
-        &lt;label&gt; <br>
-        &lt;button&gt; <br>
-        &lt;input&gt; <br>
-        &lt;select&gt; 
+        <strong>Inline-level</strong> <br>
+        <code>
+            &lt;span&gt; <br>
+            &lt;a&gt; <br>
+            &lt;code&gt; <br>
+            &lt;small&gt; <br>
+            &lt;strong&gt; <br>
+            &lt;em&gt; <br>
+            &lt;sup&gt; - &lt;sub&gt; <br>
+            &lt;label&gt; <br>
+            &lt;button&gt; <br>
+            &lt;input&gt; <br>
+            &lt;select&gt;
+        </code>
     </p>
     <p>
         Simplificando edições de largura, altura, style, color, esquerda, direita, cima, baixo e etc. <br>
-        Ex: <br>
-        border-width: 10px; <br>
-        border-style: solid; <br>
-        border-color: <br>
-        (border: 10px solid red;)
+        Ex01: <br>
+        <code>
+            <pre>
+                border-width: 10px; 
+                border-style: solid; 
+                border-color:
+                (border: 10px solid red;)
+            </pre>
+        </code>
     </p>
     <p>
         Ex02: <br>
-        padding-top(cima): 10px; <br>
-        padding-right(direita): 10px; <br>
-        padding-bottom(baixo): 10px; <br>
-        padding-left(esquerda): 10px; <br>
-        (padding: 10px 10px 10px 10px) <br>
-        (se o valor for igual, por exemplo: 10, basta colocar apenas padding: 10px)
+        <code>
+            <pre>
+                padding-top(cima): 10px; 
+                padding-right(direita): 10px; 
+                padding-bottom(baixo): 10px; 
+                padding-left(esquerda): 10px; 
+                (padding: 10px 10px 10px 10px) 
+            </pre>
+        </code>
+        (se o valor for igual, por exemplo: 10, basta colocar apenas <code>padding: 10px</code>)
     </p>
     <h2>Grouping tags em HTML</h2>
     <p>
-        &lt;header&gt;&lt;/header&gt; = cabeçalho. (Não confundir com head) <br>
-        &lt;main&gt;&lt;/main&gt; = conteúdo principal. <br>
-        &lt;footer&gt;&lt;/footer&gt; = rodapé.
+        <strong>&lt;header&gt;&lt;/header&gt;</strong> = cabeçalho. (Não confundir com head) <br>
+        <strong>&lt;main&gt;&lt;/main&gt;</strong> conteúdo principal. <br>
+        <strong>&lt;footer&gt;&lt;/footer&gt;</strong> = rodapé.
     </p>
     <p>
         Ex: <br>
         <code>
-            &lt;body&gt; <br>
-            &lt;header&gt; <br>
-            &lt;h1&gt;Site&lt;/h1&gt; <br>
-            &lt;nav&gt; (serve para colocar links, basicamente) <br>
-            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
-            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
-            &lt;a href= "#"&gt;link&lt;/a&gt; <br>
-            &lt;/nav&gt; <br>
-            &lt;/header&gt; <br>
-            &lt;main&gt; <br>
-            (Assuntos) <br>
-            &lt;/main&gt; <br>
-            &lt;footer&gt; <br>
-            &lt;p&gt; Desenvolvido por Marlon &lt;/p&gt; <br>
-            &lt;/footer&gt;
+            <pre>
+                &lt;body&gt;
+                &lt;header&gt;
+                    &lt;h1&gt;Site&lt;/h1&gt;
+                        &lt;nav&gt; (serve para colocar links, basicamente)
+                            &lt;a href= "#"&gt;link&lt;/a&gt;
+                            &lt;a href= "#"&gt;link&lt;/a&gt;
+                            &lt;a href= "#"&gt;link&lt;/a&gt;
+                        &lt;/nav&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                    (Assuntos)
+                &lt;/main&gt;
+                &lt;footer&gt;
+                    &lt;p&gt; Desenvolvido por Marlon &lt;/p&gt;
+                &lt;/footer&gt;
+            </pre>
         </code>
     </p>
     <p>Depois disso, organiza tudo no CSS.</p>
     <h2>Sombras</h2>
     <p>
         Ex: <br>
-        nav { <br>
-            box-shadow: 5px(horizontal) 3px(vertical) 7px(bluer) black(cor) <br>
-        } <br>
+        <code>
+            <pre>
+                nav {
+                    box-shadow: 5px(horizontal) 3px(vertical) 7px(bluer) black(cor) 
+                } 
+            </pre>
+        </code>
     </p>
     <h3>Caixas com os cantos arredondados</h3>
     <p>
         Ex: <br>
-        main { <br>
-            border-radius: 20px <br>
-        } 
+        <code>
+            <pre>
+                main { 
+                    border-radius: 20px 
+                }
+            </pre>
+        </code>
     </p>
     <h3>Como colocar uma imagem de fundo</h3>
     <p>
         Ex: <br>
-        background-color: url('imagens/pattern001.png') <br>
-        background-attachment: fixed; - A imagem do fundo continua com a rolagem.
+        <code>
+            <pre>
+                background-color: url('imagens/pattern001.png') 
+                background-attachment: fixed;
+            </pre>
+        </code> - A imagem do fundo continua com a rolagem.
     </p>
     <h2>Shorthand-background</h2>
     <p>
-        color - image - position - repeat - attachment <br>
-        background: black url('imagens/wallpaper002.jpg') center center no-repeat - fixed; (como o size ainda não funciona, precisa fazer um separado para ele) <br>
-        background-size: cover;
+        <strong>color - image - position - repeat - attachment</strong> <br>
+        <code><pre>background: black url('imagens/wallpaper002.jpg') center center no-repeat - fixed;</pre></code> (como o size ainda não funciona, precisa fazer um separado para ele) <br>
+        <code><pre>background-size: cover;</pre></code>
     </p>
     <h2>Tabelas em HTML</h2>
     <p>
-        &lt;table&gt;&lt;/table&gt; tag para fazer tabela.
+        <strong>&lt;table&gt;&lt;/table&gt;</strong> tag para fazer tabela.
     </p>
     <p>
         Hierarquia de tabela (simples) <br>
         Table = tabela <br>
-        table row = linha de tabela (&lt;tr&gt;&lt;/tr&gt;) <br>
-        table header = cabeçalho da tabela <br>
-        table data = dado de tabela (&lt;td&gt;&lt;/td&gt;)
+        <strong>table row</strong> = linha de tabela (&lt;tr&gt;&lt;/tr&gt;) <br>
+        <strong>table header</strong> = cabeçalho da tabela <br>
+        <strong>table data</strong> = dado de tabela (&lt;td&gt;&lt;/td&gt;)
     </p>
     <p>Para ficar igual tabela de excel, basta fazer assim no CSS:</p>
     <p>
-        table { <br>
-            width: 400px; <br>
-            border-collapse: collapse; <br>
-        } <br>
-        td { <br>
-            border: 1px solid black; <br>
-            padding: 8px;
-        }
+        <code>
+            <pre>
+                table { 
+                    width: 400px; 
+                    border-collapse: collapse; 
+                } <br>
+                td { 
+                    border: 1px solid black; 
+                    padding: 8px;
+                }
+            </pre>
+        </code>
     </p>
     <h3>Anatomia de tabelas grandes</h3>
     <p>
@@ -340,58 +432,70 @@
     <h3>Efeito zebrado na tabela</h3> 
     <p>
         Ex: <br>
-        tbody > tr:nth-child(2n) { <br>
-            background-color: (qualquer cor) <br>
-        } 
+        <code>
+            <pre>
+                tbody > tr:nth-child(2n) { 
+                    background-color: (qualquer cor) 
+                }
+            </pre>
+        </code>
     </p>
     <h3>Cabeçalho fixo em tabela grande</h3>
     <p>
         Ex: <br>
-        table { <br>
-            position: relative; <br>
-        } <br>
-        thead > tr > th { <br>
-            position: sticky; <br>
-            top: -1px; <br>
-            background-color: (qualquer cor);
-        }
+        <code>
+            <pre>
+                table { 
+                    position: relative; 
+                } 
+                thead > tr > th { 
+                    position: sticky;
+                    top: -1px; 
+                    background-color: (qualquer cor);
+                }
+            </pre>
+        </code>
     </p>
     <h3>Mesclagem de células</h3>
     <p>
-        colspan = "número que for" para ficar "deitado" <br>
-        rowspan = "número que for" para ficar "em pé"
+        <strong>colspan</strong> = "número que for" para ficar "deitado" <br>
+        <strong>rowspan</strong> = "número que for" para ficar "em pé"
     </p>
     <h2>iframe</h2>
     <p>
         O iframe é um "miniquadro" que você pode colocar uma outra aba. <br>
         Ex: <br>
-        &lt;iframe&gt; src= "" frameborder= "(Aqui você pode mudar o tamanho com height e width)" &lt;/iframe&gt; <br>
+        <code>
+                &lt;iframe&gt; src= "" frameborder= "(Aqui você pode mudar o tamanho com height e width)" &lt;/iframe&gt;
+        </code> <br>
         Tamanho padrão de um iframe= 300x150 pixels.
     </p>
     <h2>Formulário básico</h2>
     <p>
         Ex: <br>
-        &lt;form&gt; (Colocar "action=" na frente quando for enviar para um banco de dados.) <br>
-        &lt;p&gt; Nome: &lt;input type= "text" name= "nome" id= "nome"&gt;&lt;/p&gt; <br>
-        &lt;p&gt; Sobrenome: &lt;input type= "text" name= "sobrenome" id= "sobrenome"&gt;&lt;/p&gt; <br>
-        &lt;p&gt; &lt;input type= "submit" value= "Enviar"&gt;&lt;/p&gt; <br>
-        &lt;/form&gt; <br>
+        <code>
+            &lt;form&gt; (Colocar "action=" na frente quando for enviar para um banco de dados.) <br>
+            &lt;p&gt; Nome: &lt;input type= "text" name= "nome" id= "nome"&gt;&lt;/p&gt; <br>
+            &lt;p&gt; Sobrenome: &lt;input type= "text" name= "sobrenome" id= "sobrenome"&gt;&lt;/p&gt; <br>
+            &lt;p&gt; &lt;input type= "submit" value= "Enviar"&gt;&lt;/p&gt; <br>
+            &lt;/form&gt; <br>
+        </code>
         (A tag "input" tem vários types que você pode escolher) 
     </p>
     <p>
-        &lt;label for= "nome"&gt; Nome &lt;/label&gt; Isso melhora o formulário; <br>
-        Colocar "required" para ser obrigatório preencher; <br>
-        Colocar "minlength:" para definir o número mínimo de caracteres; <br>
-        Colocar "maxlength:" para definir o máximo; <br>
-        Colocar "placeholder" para aparecer um nome dentro da caixa. <br>
-        &lt;fildset&gt;&lt;/fildset&gt; Faz um "quadrado" no formulário. <br>
-        &lt;legend&gt;&lt;/legend&gt; Faz uma legenda no formulário.
+        <strong>&lt;label for= "nome"&gt;Nome&lt;/label&gt;</strong>o> Isso melhora o formulário; <br>
+        Colocar "<code>required</code>" para ser obrigatório preencher; <br>
+        Colocar "<code>minlength:</code>" para definir o número mínimo de caracteres; <br>
+        Colocar "<code>maxlength:</code>" para definir o máximo; <br>
+        Colocar "<code>placeholder</code>" para aparecer um nome dentro da caixa. <br>
+        <strong>&lt;fildset&gt;&lt;/fildset&gt;</strong> Faz um "quadrado" no formulário. <br>
+        <strong>&lt;legend&gt;&lt;/legend&gt;</strong> Faz uma legenda no formulário.
     </p>
     <h2>Media Query</h2>
     <p>
         Basicamente, fazer um CSS quando for feita uma impressão. <br>
-        Media= "screen" - Só para telas. <br>
-        Media= "print" - Só para impressão.
+        <strong>Media= "screen"</strong> - Só para telas. <br>
+        <strong>Media= "print"</strong> - Só para impressão.
     </p>
 
 </body>
