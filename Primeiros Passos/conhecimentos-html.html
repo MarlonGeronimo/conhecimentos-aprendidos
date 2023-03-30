@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Coisas que aprendi em HTML</h1>
@@ -18,157 +19,169 @@
     <p>Interações: Menus, animações, popups, validações.</p>
 
     <h2>Conteúdo em HTML</h2>
-    <p>&lt;h1&gt;Exemplo de título&lt;/h1&gt;</p>
-    <p>&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;</p>
-    <p>&lt;img src= "foto.png" Alt= "Exemplo de foto"&gt;</p>
+    <p><code>&lt;h1&gt;</code>Exemplo de título<code>&lt;/h1&gt;</code></p>
+    <p><code>&lt;p&gt;</code>Exemplo de paragrafo<code>&lt;/p&gt;</code></p>
+    <p><code>&lt;img src</code>= "foto.png" <code>alt</code>= "Exemplo de foto"&gt;</p>
 
     <h2>Estrutura básica de documento HTML</h2>
     <p>
-        &lt;!DOCTYPE html&gt; <br>
-        &lt;html lang= "pt-br"&gt; <br>
-        &lt;head&gt; <br>
-        &lt;meta charset= "UTF-8"&gt; <br>
-        &lt;meta name= "viewport" content= "width= device-width, initial-scale= 1.0"&gt; <br>
-        &lt;title&gt;Document&lt;/title&gt; <br>
-        &lt;/head&gt; <br>
-        &lt;body&gt; <br>
-        &lt;h1&gt;Olá, Mundo!&lt;/h1&gt; <br>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <p>(Apertar "!" Ele deixa o código "pronto" para editar)</p>
+        <code>
+            <pre>
+                &lt;!DOCTYPE html&gt; 
+                &lt;html lang= "pt-br"&gt; 
+                &lt;head&gt; 
+                    &lt;meta charset= "UTF-8"&gt; 
+                    &lt;meta name= "viewport" content= "width= device-width, initial-scale= 1.0"&gt; 
+                    &lt;title&gt;Document&lt;/title&gt; 
+                &lt;/head&gt; 
+                &lt;body&gt; 
+                    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt; 
+                &lt;/body&gt; 
+                &lt;/html&gt; 
+            </pre>
+        </code>
+        <p>(Apertar "<strong>!</strong>" Ele deixa o código "pronto" para editar)</p>
     </p>
 
     <h2>Paragrafos e quebra linhas</h2>
-    &lt;br&gt; Ele quebra a linha pra baixo. <br>
-    & lt; + & gt; Usar quando quiser mostrar os &lt;&gt; sem ser comando.
+    <strong>&lt;br&gt;</strong> Ele quebra a linha pra baixo. <br>
+    <code>& lt; + & gt;</code>ndo quiser mostrar os <strong>&lt;&gt;</strong> sem ser comando.
     
     <h2>Adicionar emoji</h2>
-    &#x "código do emojipidia"
+    <strong>&#x</strong> + "código do emojipidia"
 
     <h2>Texte com imagens</h2>
-    <p>img src= "origem" alt= "explicar o que é a imagem"</p>
-    <p>(ctrl + space entre as aspas aparece as opções de imagem)</p>
+    <p><code>img src</code>= "origem" <code>alt</code>= "explicar o que é a imagem"</p>
+    <p>(<strong>ctrl + space</strong> entre as aspas aparece as opções de imagem)</p>
 
     <h2>Mudar icon da página</h2>
     <P>
-        Icon Archive= escolher um pronto. <br>
-        favicon.cc= fazer um. <br>
-        favicon.io= escolha uma forma e a IA faz por você. <br>
-        Para colocar no código: dentro do head, em cima do title, digite "Link: favicon".
+        <a href="https://www.iconarchive.com/">Icon Archive</a>= escolher um pronto. <br>
+        <a href="https://www.favicon.cc/">favicon.cc</a>= fazer um. <br>
+        <a href="https://favicon.io/">favicon.io</a>= escolha uma forma e a IA faz por você. <br>
+        Para colocar no código: dentro do head, em cima do title, digite "<strong>Link: favicon</strong>"
     </P>
 
     <h2>Hierarquia de títulos</h2>
     <p>
         H1= título principal - título de nível 1 <br>
        H2= título de nível 2 <br>
-       h3= título de nível 3 <br>
+       H3= título de nível 3 <br>
        Vai do H1 até o H6 <br>
-       (&lt;p&gt;Lorem&lt;/p&gt; GERADOR DE BLABLABLA)
+       (<code>&lt;p&gt;Lorem&lt;/p&gt;</code> GERADOR DE BLABLABLA)
     </p>
 
     <h2>Negrito e Itálico do jeito certo</h2>
     <p>
-        Negrito maneira NÃO semântica: &lt;b&gt;&lt;/b&gt; <br>
-        Negrito maneira semântica: &lt;strong&gt;&lt;/strong&gt; <br>
-        Itálico maneira NÃO semântica: &lt;i&gt;&lt;/i&gt; <br>
-        Itálico maneira semântica: &lt;em&gt;&lt;/em&gt; <br>
-        (ctrl + shift + p = dicas)
+        Negrito maneira NÃO semântica: <strong>&lt;b&gt;&lt;/b&gt;</strong> <br>
+        Negrito maneira semântica: <strong>&lt;strong&gt;&lt;/strong&gt;</strong> <br>
+        Itálico maneira NÃO semântica: <strong>&lt;i&gt;&lt;/i&gt;</strong> <br>
+        Itálico maneira semântica: <strong>&lt;em&gt;&lt;/em&gt;</strong> <br>
+        (<strong>ctrl + shift + p</strong> = dicas)
     </p>
 
     <h2>Formatações adicionais</h2>
     <p>
-        &lt;mark&gt;&lt;/mark&gt; Adiciona como se fosse marca texto. <br>
-        &lt;mark style= "background-color:'cor'";&gt; Muda a cor de maneira pontual. <br>
-        Para mudar a cor de todos os mark, colocar na área "head" com &lt;mark style= "background-color:'cor'";&gt;<br><br>
-        Texto grande: &lt;big&gt;&lt;/big&gt; <br>
-        Texto Pequeno: &lt;small&gt;&lt;/small&gt; <br><br>
-        Texto excluído: &lt;del&gt;&lt;/del&gt; O texto aparece riscado. <br>
-        Texto inserido: &lt;ins&gt;&lt;/ins&gt; O texto aparece sublinhado. <br><br>
-        Texto sobrescrito: &lt;sup&gt;&lt;/sup&gt; A parte selecionada no texto fica em cima. <br>
-        Texto subscrito: &lt;sub&gt;&lt;/sub&gt; A parte selecionada no texto fica em baixo.
+        <strong>&lt;mark&gt;&lt;/mark&gt;</strong> Adiciona como se fosse marca texto. <br>
+        <code>&lt;mark style= "background-color:'cor'";&gt;</code> Muda a cor de maneira pontual. <br>
+        Para mudar a cor de todos os mark, colocar na área "head" com <code>&lt;mark style= "background-color:'cor'";&gt;</code><br><br>
+        Texto grande: <strong>&lt;big&gt;&lt;/big&gt;</strong> <br>
+        Texto Pequeno: <strong>&lt;small&gt;&lt;/small&gt;</strong> <br><br>
+        Texto excluído: <strong>&lt;del&gt;&lt;/del&gt;</strong> O texto aparece riscado. <br>
+        Texto inserido: <strong>&lt;ins&gt;&lt;/ins&gt;</strong> O texto aparece sublinhado. <br><br>
+        Texto sobrescrito: <strong>&lt;sup&gt;&lt;/sup&gt;</strong> A parte selecionada no texto fica em cima. <br>
+        Texto subscrito: <strong>&lt;sub&gt;&lt;/sub&gt;</strong> A parte selecionada no texto fica em baixo.
     </p>
 
     <h2>Códigos e citações</h2>
     <h3>Código-fonte/Pré-formatação:</h3>
     <p>
-        &lt;code&gt;&lt;/code&gt; Fica numa formatação melhor para código. <br>
-        &lt;pre&gt;&lt;/pre&gt; Fica numa formatação com linha de código. <br>
+        <strong>&lt;code&gt;&lt;/code&gt;</strong> Fica numa formatação melhor para código. <br>
+        <strong>&lt;pre&gt;&lt;/pre&gt;</strong>/pre&gt;</strong> Fica numa formatação com linha de código. <br>
         (Dá para usar as duas maneiras juntas.)
     </p>
     <h3>Citação simples:</h3>
     <p>
-        &lt;q&gt;&lt;/q&gt; Coloca aspas (fica um sentido ao inves de colocar as aspas manualmente).
+        <strong>&lt;q&gt;&lt;/q&gt;</strong> Coloca aspas (fica um sentido ao inves de colocar as aspas manualmente).
     </p>
     <h3>Citação Completa:</h3>
     <p>
-        &lt;blockquote&gt;&lt;/blockquote&gt; A citação vai mais para a direita.
+        <strong>&lt;blockquote&gt;&lt;/blockquote&gt;</strong> A citação vai mais para a direita.
     </p>
     <h3>Abreviações:</h3>
     <p>
-        &lt;abbr title= "Exemplo de abreviação"&gt;&lt;/abbr&gt; Serve para mostrar o que significa a abreviação.
+        <code>&lt;abbr title</code>= "Exemplo de abreviação"<code>&gt;</code><code>&lt;/abbr&gt;</code> Serve para mostrar o que significa a abreviação.
     </p>
 
     <h2>Listas</h2>
     <p>
-        &lt;ol&gt;&lt;/ol&gt; Listas ordenadas (1, 2, 3...) <br>
+        <strong>&lt;ol&gt;&lt;/ol&gt;</strong> Listas ordenadas (1, 2, 3...) <br>
         (ol type aparece as opções de como você quer numerar) <br>
-        &lt;li&gt;&lt;/li&gt; Item de lista (Ele que coloca os números) <br>
-        &lt;ul&gt;&lt;/ul&gt; Listas não ordenadas (Não precisa seguir uma ordem) <br>
+        <strong>&lt;li&gt;&lt;/li&gt;</strong>tem de lista (Ele que coloca os números) <br>
+        <strong>&lt;ul&gt;&lt;/ul&gt;</strong> Listas não ordenadas (Não precisa seguir uma ordem) <br>
         (ul type você escolhe entre círculo preto: "disc"; círculo limpo: "circle"; um quadradinho: "square") <br>
         Para fazer uma lista dentro da lista é só colocar dentro do "&lt;li&gt;" a tag &"lt;ol&gt;" ou "&lt;ul&gt;".
     </p>
     <h3>Listas de definição</h3>
     <p>
-        &lt;dl&gt;&lt;/dl&gt; Para fazer a lista. <br>
-        &lt;dt&gt;&lt;/dt&gt; Como se fosse o termo. <br>
-        &lt;dd&gt;&lt;/dd&gt; Como se fosse a descrição.
+        <strong>&lt;dl&gt;&lt;/dl&gt;</strong> Para fazer a lista. <br>
+        <strong>&lt;dt&gt;&lt;/dt&gt;</strong> Como se fosse o termo. <br>
+        <strong>&lt;dd&gt;&lt;/dd&gt;</strong> Como se fosse a descrição.
     </p>
     <h2>Links</h2>
     <p>
         Link externo: Um link que não é nosso. <br>
-        &lt;a href= "Link do site"&gt;&lt;/a&gt; <br>
-        target= "_blank" rel= "external" O link abre em outra página em outra aba. <br>(Recomendado ir para outra página quando o link for externo e permanecer na aba quando for seu.) <br><br>
+        <code>&lt;a href</code>= "Link do site"<code>&gt;&lt;/a&gt;</code> <br>
+        <strong>target= "_blank" rel= "external"</strong> O link abre em outra página em outra aba. <br>(Recomendado ir para outra página quando o link for externo e permanecer na aba quando for seu.) <br><br>
         Link interno: <br>
-        Basicamente a mesma coisa do externo, mas você usa o seu link e use a dica do "ctrl + space" para abrir os links e pastas. <br><br>
+        Basicamente a mesma coisa do externo, mas você usa o seu link e use a dica do "<strong>ctrl + space</strong>" para abrir os links e pastas. <br><br>
         Link para download: <br>
         Ex: <br> 
-        &lt;a href= "livro/meulivro.pdf" download= "meulivro.pdf" type= "application/pdf"&gt;&lt;/a&gt;
+        <code><pre>&lt;a href= "livro/meulivro.pdf" download= "meulivro.pdf" type= "application/pdf"&gt;&lt;/a&gt;</pre></code>
     </p>
     <h2>Imagens dinâmicas</h2>
     <p>
         Dimensões: <br>
-        No celular: 300/300 e 80/80 <br>
-        No tablet: 700/700 e 80/80 <br>
-        Notebook/TV: 1000/1000 e 80/80
+        <strong>No celular</strong>: 300/300 e 80/80 <br>
+        <strong>No tablet</strong>: 700/700 e 80/80 <br>
+        <strong>Notebook/TV</strong>: 1000/1000 e 80/80
     </p>
     <p>
-        &lt;picture&gt;&lt;/picture&gt; Essa tag permite que você crie várias sourcers, fontes e etc. <br><br>
+        <strong>&lt;picture&gt;&lt;/picture&gt;</strong> Essa tag permite que você crie várias sourcers, fontes e etc. <br><br>
         Ex: <br>
-        &lt;picture&gt; <br>
-        &lt;Source media= "(max= width: 750px)" srcset= "imagens/foto-p.png" type= "image/png"&gt; <br>
-        &lt;Source media= "(max= width: 1050px)" srcset= "imagens/foto-m.png" type= "image/png"&gt; <br>
-        &lt;img src= "imagens/foto-g.png" alt= "Imagem flexível"&gt; <br>
-        &lt;/picture&gt;
+        <code>
+            <pre>
+                &lt;picture&gt; 
+                    &lt;Source media= "(max= width: 750px)" srcset= "imagens/foto-p.png" type= "image/png"&gt; 
+                    &lt;Source media= "(max= width: 1050px)" srcset= "imagens/foto-m.png" type= "image/png"&gt; 
+                    &lt;img src= "imagens/foto-g.png" alt= "Imagem flexível"&gt; 
+                &lt;/picture&gt;
+            </pre>
+        </code>
     </p>
     <h2>Áudios</h2>
     <p>
         Ex: <br>
-        &lt;audio src= "media/happy-mistake.mp3" controls autoplay&gt;&lt;/audio&gt; <br>
+        <code>&lt;audio src= "media/happy-mistake.mp3" controls autoplay&gt;&lt;/audio&gt;</code> <br>
         Essa é a maneira simples de fazer. <br><br>
         Maneira "mais complexa" <br>
         Ex: <br>
-        &lt;audio preload= "metadata" autoplay controls loop&gt; <br>
-        &lt;source src= "midia/guanacast-33.mp3" type= "audio/mpeg"&gt; <br>
-        &lt;source src= "midia/guanacast-33.ogg" type= "audio/ogg"&gt; <br>
-        &lt;source src= "midia/guanacast-33.wav" type= "audio/wav"&gt; <br>
+        <code>
+            <pre>
+                &lt;audio preload= "metadata" autoplay controls loop&gt; 
+                    &lt;source src= "midia/guanacast-33.mp3" type= "audio/mpeg"&gt; 
+                    &lt;source src= "midia/guanacast-33.ogg" type= "audio/ogg"&gt; 
+                    &lt;source src= "midia/guanacast-33.wav" type= "audio/wav"&gt; 
+            </pre>
+        </code>
         Caso não carregue nenhum, coloque o link do arquivo para a pessoa baixar.
     </p>
     <h2>Vídeos</h2>
     <p>
         Ex: <br>
-        &lt;video src= "midia/meu-video.mp4" width= "500" controls&gt;&lt;/video&gt; <br> Essa é a maneira simples de fazer. <br><br>
+        <code>&lt;video src= "midia/meu-video.mp4" width= "500" controls&gt;&lt;/video&gt;</code> <br> Essa é a maneira simples de fazer. <br><br>
         A maneira "mais complexa" é basicamente a mesma coisa, só muda o tipo (mp4, ogv, webm) colocar do mais leve para o mais pesado. <br>
-        (Da pra colocar a tumb do vídeo com a tag "poster" dentro de vídeo) <br>
+        (Da pra colocar a tumb do vídeo com a tag "<strong>poster</strong>" dentro de vídeo) <br>
         Isso é hospedando ele do próprio site.
     </p>
     <h3>Vídeos do YouTube</h3>
